@@ -1,4 +1,4 @@
-|<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
     <head>
@@ -6,8 +6,38 @@
         <meta name="description" content="Form for enrolling an elective class"/>
         <meta charset="utf-8" />
 
-        <link href = "images/electives.jpeg" rel="icon" type="image/jpeg">
+        <link href="styling.css" rel="stylesheet"></link>
+        <link href = "images/els.jpg" rel="icon" type="image/jpg">
 
-        <title>Избор на дисциплина</title>
+        <title>Добавяне на дисциплина</title>
+        <body>
+            <div class="form-style-2">
+                <div class="form-style-2-heading">Добавяне на дисциплина</div>
+                <form action="" method="post">
+                    <label for="title"><span>Име</span><span class="required">*</span>
+                    <input id="title" name="title" type="text" class="input-field" placeholder="Не по-дълго от 150 символа" /></label> 
+
+                    <label for="teacher"><span>Преподавател</span><span class="required">*</span>
+                    <input id="teacher" name="teacher" type="text" class="input-field" placeholder="Не по-дълго от 200 символа" /></label> 
+                    
+                    <label for="description"><span>Описание</span><span class="required">*</span>
+                    <textarea id="description" name="description" class="textarea-field" placeholder="Не по-малко от 10 символа" ></textarea></label>
+                    
+                    <label for="group"><span>Група</span><span class="required"></span>
+                    <select id="group" name="group" class="select-field">
+                        <option value="M">Математика</option>
+                        <option value="PM">Приложна матиматика</option>
+                        <option value="OKN">Основи на компютърните науки</option> 
+                        <option value="YAKN">Ядро на компютърните науки</option>
+                    </select></label>
+
+                    <label for="credits"><span>Кредити</span><span class="required"></span> 
+                    <input id="credits" name="credits" type="text" class="input-field" placeholder="Цяло положително число" ></input></label>
+                    
+                    <br />
+                    <label><span></span><span></span><input type="submit" value="Запиши" ></input></label>      
+                </form>
+            </div>
+        </body>
     </head>
 </html>
